@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="main">
+    <h1>Jogo da Velha</h1>
+
+    <div class="game-container">
+        <div class="container-md">
+            <div id="square-1" class="container"></div>
+            <div id="square-2" class="container"></div>
+            <div id="square-3" class="container"></div>
+            <div id="square-4" class="container"></div>
+            <div id="square-5" class="container"></div>
+            <div id="square-6" class="container"></div>
+            <div id="square-7" class="container"></div>
+            <div id="square-8" class="container"></div>
+            <div id="square-9" class="container"></div>
+        </div>
+    </div>
+
+    <a href="https://github.com/Mentor404" class="author">/Mentor404</a>
+</section>
+
+
+<section id="menu">
+    <h2>Placar</h2>
+    <div class="container-score">
+        <p>Jogador 1</p>
+        <div class="box">
+            <div class="box-icon">
+                <p class="icon">X</p>
+            </div>
+            <div class="box-score" id="score-1">
+                <p>0</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-score">
+        <p>Jogador 2</p>
+        <div class="box">
+            <div class="box-icon">
+                <p class="icon">O</p>
+            </div>
+            <div class="box-score" id="score-2">
+                <p>0</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Modo</h2>
+    <a href="#" class="button-mode" id="mode-ia">Com I.A.</a>
+<!--    soon? maybe-->
+    <a href="#" class="button-mode active" id="mode-friend">Com amigo</a>
+
+
+    <a href="#" class="button-reset">Redefinir</a>
+</section>
+
+<div class="hidden">
+    <p class="icon icon-large" id="x">X</p>
+    <p class="icon icon-large" id="o">O</p>
+</div>
+
+<div class="hidden" id="container-message">
+    <div class="msg-container"></div>
+    <p class="message">O jogador 1 ganhou!</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
