@@ -64,6 +64,8 @@ function verifyWin() {
                 highlightBox(boxA, boxB, boxC);
                 win = true;
                 break;
+            } else if (player1 + player2 === 9) {
+                setWinner();
             }
         }
     }

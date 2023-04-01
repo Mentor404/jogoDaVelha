@@ -281,3 +281,77 @@ h2 {
 .highlight {
     background-color: var(--gray-light);
 }
+
+@media (max-width: 992px) {
+    body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .author {
+        display: none;
+    }
+
+    #main {
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .game-container {
+        width: 90%;
+        height: 35vh;
+        margin-bottom: 40px;
+    }
+
+    .container-md {
+        width: 87.50%;
+        height: 87.50%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+    }
+
+    .container-score {
+        scale: 1.4;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .button-reset {
+        margin-top: 100px;
+        scale: 1.4;
+    }
+
+    h2:nth-child(3) {
+        display: none;
+    }
+
+    h2:nth-child(1) {
+        scale: 1.4;
+        margin-top: 4%;
+        margin-bottom: 10%;
+
+    }
+
+    .button-mode {
+        display: none;
+    }
+
+    h1 {
+        scale: 1.4;
+        margin-bottom: 5%;
+    }
+
+    .container-scoreboard {
+        display: flex;
+        width: calc(100% - 50px);
+        justify-content: space-evenly;
+    }
+
+    .message {
+        padding: 16px 120px;
+    }
+}
