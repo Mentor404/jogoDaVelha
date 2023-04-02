@@ -21,20 +21,20 @@ console.log(player1);
 
 for (let box of boxes) {
     box.addEventListener("click", () => {
-
+        
+        if (!box.hasChildNodes()) {
         let turn;
 
-        if (player1 === player2) {
-            turn = turnX;
-            player1++;
-        } else {
-            turn = turnO;
-            player2++;
-        }
-
-        if (!box.hasChildNodes()) {
-            let copyOfTurn = turn.cloneNode(true);
-            box.appendChild(copyOfTurn);
+            if (player1 === player2) {
+                turn = turnX;
+                player1++;
+            } else {
+                turn = turnO;
+                player2++;
+            }
+        
+          let copyOfTurn = turn.cloneNode(true);
+          box.appendChild(copyOfTurn);
         }
         verifyWin();
     });
