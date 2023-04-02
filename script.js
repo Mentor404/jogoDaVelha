@@ -35,8 +35,9 @@ for (let box of boxes) {
         
           let copyOfTurn = turn.cloneNode(true);
           box.appendChild(copyOfTurn);
+            
+          verifyWin();
         }
-        verifyWin();
     });
 }
 
